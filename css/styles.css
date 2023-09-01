@@ -64,15 +64,20 @@ body {
     display: block;
 }
 
+
 .title-contacts {
     color: var(--slate);
-    /* Body */
-    font-family: "Roboto", sans-serif;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5; /* 150% */
-    letter-spacing: 0.02px;
+    line-height: 1.5; 
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    display: block;
+    padding: 24px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.title-contacts:hover, .title-contacts:focus {
+    color: #404bbf;
 }
 
 /*------------------------------ main section -------------------------------*/
@@ -113,7 +118,7 @@ body {
 }
 
 .main-board-button {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
     background: var(--iris);
     color: var(--white);
     margin: 0 auto;
@@ -130,10 +135,15 @@ body {
     border-radius: 4px;
     border: none;
     background: var(--iris, #4D5AE5);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15); */
     display: block;
     min-width: 169px;
     height: 56px;
+}
+
+.butstyle {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .butstyle:hover, .butstyle:focus {
@@ -147,7 +157,6 @@ body {
 }
 
 .head_conteiner_preview {
-    width: 1440px;
 }
 
 .visually-hidden {
@@ -196,7 +205,6 @@ body {
 
 .section-preview-paragraph {
     color: var(--slate);
-    padding-top: 8px;
     /* Body */
     font-family: "Roboto", sans-serif;
     font-size: 16px;
@@ -212,7 +220,6 @@ body {
     padding-bottom: 120px;
 }
 .conteiner_imeges_title {
-    width: 1440px;
 }
 
 .section-imeges-title {
@@ -235,7 +242,7 @@ body {
 }
 
 .images-inside {
-    width: calc((100% - 48px) / 3)
+    width: calc((100% - 48px) / 3);
 }
 
 /*------------------------------section 4-------------------------------*/
@@ -310,7 +317,7 @@ body {
     display: flex; 
     justify-content: center; 
     gap: 24px;
-    padding-top: 8px;
+    margin-top: 8px;
 }
 
 .icons_list {
@@ -571,12 +578,11 @@ body {
 }
 
 .title-list {
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
     line-height: 1.5; 
-    letter-spacing: 0.02em;
+    letter-spacing: 0.02em; */
 }
 
 .title-list-link:hover, .title-list-link:focus {
@@ -606,14 +612,16 @@ body {
     transition: transform 200ms linear;
 }
 
+.current {
+    color: #404bbf; 
+}
+
 .title-list-link:hover:after, 
 .title-list-link:focus:after, 
 .title-list-link.current:after {
     /* opacity: 1; */
     transform: scale(1);
 }
-
-
 
 .title-adress {
     font-style: normal;
@@ -626,22 +634,6 @@ body {
     gap: 40px;
 }
 
-.title-contacts {
-    color: var(--slate);
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5; 
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    padding: 24px 0;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.title-contacts:hover, .title-contacts:focus {
-    color: #404bbf;
-}
 
 /*------------------------------main-------------------------------*/
 /*------------------------------section-------------------------------*/
@@ -885,6 +877,7 @@ body {
 }
 
 .form_logo_user {
+    fill: #2E2F42; 
     position: absolute;
     left: 16px;
     top: 50%;
@@ -952,7 +945,7 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
     margin: 0 auto;  
 }
 
-.user-button-input::before, .user-button-input::after {
+/* .user-button-input::before, .user-button-input::after {
     content: "";
     position: absolute;
     bottom: -2px;
@@ -962,15 +955,15 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
     background: #12058a;
     transform: scaleX(0);
     transition: transform 0.3s ease;
-}
+} */
 
-.user-button-input:hover {
+/* .user-button-input:hover {
     color: #12058a;
-}
+} */
 
-.user-button-input:hover::before {
+/* .user-button-input:hover::before {
     transform: scaleX(1);
-}
+} */
 
 .user-privacy-text {
     font-size: 12px;
