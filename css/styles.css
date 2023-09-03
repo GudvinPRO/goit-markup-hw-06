@@ -89,7 +89,8 @@ body {
 .container {
     min-width: 320px;
     max-width: 428px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 16px 0 16px; 
 
     /* width: 1158px;
@@ -103,6 +104,14 @@ body {
 @media screen and (min-width: 768px) {
     .container {
         max-width: 736px; 
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .container {
+        width: 1158px;
+        margin: 0 auto;
+        padding: 0 15px 0 15px; 
     }
 }
 
