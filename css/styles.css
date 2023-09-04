@@ -221,6 +221,7 @@ body {
     }
 
     .list_container{
+        gap: 72px 24px;
     }  
 }
 
