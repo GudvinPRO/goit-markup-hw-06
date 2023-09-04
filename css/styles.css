@@ -737,7 +737,7 @@ screen and (min-resolution: 2dppx) {
     text-transform: uppercase;
     text-decoration-line: none;
     font-family: "Raleway", sans-serif;
-    margin-right: 76px;
+    /* margin-right: 76px; */
 }
 
 .logo-part {
@@ -758,7 +758,8 @@ screen and (min-resolution: 2dppx) {
 .header_container {
     display: flex;
     align-items: center;
-    height: 72px;
+    height: 70px;
+    /* height: 72px; */
 }
 
 .title-list {
