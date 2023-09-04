@@ -103,23 +103,19 @@ body {
     }
 }
 
-/* @media screen and (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
         margin: 0 auto;
         padding: 0 15px 0 15px; 
     }
-} */
+}
 
 .main-board {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
     rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-mobil.jpg);
-    /* background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
-    rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg); */
     max-width: 428px;
     padding: 112px 0; 
-    /* max-width: 1440px;
-    padding: 188px 0;  */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
@@ -146,7 +142,6 @@ body {
     color: var(--white);
     margin: 0 auto;
     margin-top: 72px;
-    /* margin-top: 48px; */
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -177,6 +172,25 @@ body {
 
     .main-board-button {
         margin-top: 36px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .main-board {
+        max-width: 1440px;
+        padding: 188px 0; 
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
+    rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+    }
+
+    .main-board-title {
+        font-size: 56px; 
+        line-height: 1.07;
+        max-width: 496px;
+    }
+
+    .main-board-button {
+        margin-top: 48px;
     }
 }
 
