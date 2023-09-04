@@ -103,13 +103,13 @@ body {
     }
 }
 
-/* @media screen and (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
         margin: 0 auto;
         padding: 0 15px 0 15px; 
     }
-} */
+}
 
 .main-board {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
@@ -172,8 +172,7 @@ body {
 
 /*------------------------------section 2-------------------------------*/
 
-.section-preview{
-    /* padding: 120px 0; */
+.section-preview {
 }
 
 .head_conteiner_preview {
@@ -201,18 +200,22 @@ body {
 
 .container_menu_list {
     max-width: 428;
-    /* flex-basis: calc((100% - 3 * 24px) / 4); */
 }
 
 .container_menu_list_icons {
     display: none;
-    /* display: flex; 
-    align-items: center; 
-    justify-content: center;
-    height: 112px;
-    background-color: #f4f4fd; 
-    border-radius: 4px;
-    margin-bottom: 8px; */
+}
+
+.section-preview-text {
+    color: var(--navyblue);
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2; 
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -223,19 +226,42 @@ body {
     .list_container{
         gap: 72px 24px;
     }  
+
+    .section-preview-text {
+        text-align: start;
+    }
 }
 
-.section-preview-text {
-    color: var(--navyblue);
-    font-family: "Roboto", sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.2; 
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
-    text-align: center;
+@media screen and (min-width: 1158px) {
+    .container_menu_list_icons {
+        display: contents;
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+        height: 112px;
+        background-color: #f4f4fd; 
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
+
+    .container_menu_list {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .list_container{
+        gap: 24px;
+    }  
+
+    .section-preview-text {
+         font-size: 20px;
+         font-weight: 500;
+    }
+
+    .section-preview {
+        padding: 120px 0;
+    }
 }
+
 
 .section-preview-paragraph {
     color: var(--slate);
@@ -265,13 +291,12 @@ body {
 
 .section-imeges-title {
     color: var(--navyblue);
-    /* Header 2 */
     font-family: "Roboto", sans-serif;
     font-size: 36px;
     text-align: center;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.11; /* 111.111% */
+    line-height: 1.11; 
     letter-spacing: 0.02em;
     text-transform: capitalize; 
     margin-bottom: 72px;
