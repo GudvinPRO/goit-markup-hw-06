@@ -759,7 +759,10 @@ screen and (min-resolution: 2dppx) {
     display: flex;
     align-items: center;
     height: 70px;
+<<<<<<< HEAD
     /* height: 72px; */
+=======
+>>>>>>> 996b7aa703341a03020b0a892d1df912aa243bc5
 }
 
 .title-list {
@@ -812,6 +815,19 @@ screen and (min-resolution: 2dppx) {
     gap: 40px;
 }
 
+@media screen and (min-width: 768px) {
+    .title-adress {
+        display: contents; 
+    }
+
+    .title-link {
+        display: contents;
+    }
+
+    .header_container {
+        height: 72px;
+    }
+}
 
 /*------------------------------main-------------------------------*/
 /*------------------------------section-------------------------------*/
@@ -1187,14 +1203,55 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
 
 /*_____________________ mobile menu______________________ */
 
+.mobile-menu-icons {
+    stroke: #2E2F42;
+}
+
+.menu-toggle-button {
+    position: absolute;
+    top: 24px; 
+    right: 24px;
+    width: 24px; 
+    height: 24px;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    background-color: #e7e9fc; 
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-toggle-button:hover, .menu-toggle-button:focus {
+    background-color: #404bbf;
+    border: none;
+    fill: #ffffff;
+}
+
+.mobile-menu-link {
+    color: var(--navyblue);
+    display: flex;
+    padding-bottom: 40px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
 .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
+    min-height: 19px;
+    min-width: 29px;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    margin: 0;
+    margin-left: 175px;
     padding: 0;
     background-color: transparent;
     cursor: pointer;
@@ -1221,7 +1278,7 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
     width: 100vw;
     height: 100vh;
     padding: 32px;
-    background-color: #3f51b5;
+    background-color: #ffffff;
     z-index: 999;
 
     transform: translateX(100%);
@@ -1240,14 +1297,10 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
 }
 
 .mobile-menu {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+    margin-left: 40px;
+    margin-top: 80px;
 }
 
 .mobile-menu .link {
-    display: block;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
+
 }
