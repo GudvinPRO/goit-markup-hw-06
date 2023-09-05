@@ -1199,6 +1199,10 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
 
 /*_____________________ mobile menu______________________ */
 
+.mobile-menu-icons {
+    stroke: #2E2F42;
+}
+
 .menu-toggle {
     min-height: 19px;
     min-width: 29px;
@@ -1206,8 +1210,7 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
     align-items: center;
     justify-content: center;
 
-    /* margin: 0; */
-    /* margin-left: 178px; */
+    margin-left: 175px;
     padding: 0;
     background-color: transparent;
     cursor: pointer;
