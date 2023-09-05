@@ -1258,7 +1258,7 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
 .mobile-menu-link {
     color: var(--navyblue);
     display: flex;
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
     font-family: Roboto;
     font-size: 36px;
     font-style: normal;
@@ -1266,6 +1266,30 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+}
+
+.mobile-menu-link:not(:last-child) {
+    padding-bottom: 40px;
+}
+
+.title-mobail-tel {
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.11; 
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.mobile-menu-link:hover, .mobile-menu-link:focus,
+.title-mobail-tel:hover, .title-mobail-tel:focus {
+    color: #404bbf;
+}
+
+.social_menu_mobail {
+    display: flex;
+    gap: 56px;
 }
 
 .menu-toggle {
@@ -1323,8 +1347,4 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
 .mobile-menu {
     margin-left: 40px;
     margin-top: 80px;
-}
-
-.mobile-menu .link {
-
 }
