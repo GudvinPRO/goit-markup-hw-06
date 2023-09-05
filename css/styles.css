@@ -759,10 +759,6 @@ screen and (min-resolution: 2dppx) {
     display: flex;
     align-items: center;
     height: 70px;
-<<<<<<< HEAD
-    /* height: 72px; */
-=======
->>>>>>> 996b7aa703341a03020b0a892d1df912aa243bc5
 }
 
 .title-list {
@@ -815,7 +811,7 @@ screen and (min-resolution: 2dppx) {
     gap: 40px;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .title-adress {
         display: contents; 
     }
@@ -827,7 +823,7 @@ screen and (min-resolution: 2dppx) {
     .header_container {
         height: 72px;
     }
-}
+} */
 
 /*------------------------------main-------------------------------*/
 /*------------------------------section-------------------------------*/
@@ -1251,7 +1247,7 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
     align-items: center;
     justify-content: center;
 
-    margin-left: 175px;
+    margin-left: 249px;
     padding: 0;
     background-color: transparent;
     cursor: pointer;
