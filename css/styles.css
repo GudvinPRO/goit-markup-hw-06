@@ -753,7 +753,6 @@ screen and (min-resolution: 2dppx) {
     text-transform: uppercase;
     text-decoration-line: none;
     font-family: "Raleway", sans-serif;
-    /* margin-right: 76px; */
 }
 
 .logo-part {
@@ -762,8 +761,6 @@ screen and (min-resolution: 2dppx) {
 
 .title-link {
     display: none;
-    /* display: flex;
-    gap: 40px; */
 }
 
 .navigation {
@@ -787,7 +784,6 @@ screen and (min-resolution: 2dppx) {
 .title-list-link {
     text-decoration: none;
     color: var(--navyblue);
-    padding: 24px 0;
     position: relative; 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -821,17 +817,11 @@ screen and (min-resolution: 2dppx) {
 
 .title-adress-list {
     font-style: normal;
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* gap: 12px; */
-    /* gap: 40px; */
 }
 
 @media screen and (min-width: 768px) {
     .title-adress {
         display: contents;
-        font-style: normal;
-        margin-left: auto; 
     }
 
     .title-link {
@@ -843,6 +833,23 @@ screen and (min-resolution: 2dppx) {
 
     .header_container {
         height: 72px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .title-adress { 
+        font-style: normal;
+        margin-left: auto;
+    }
+
+    .title-link {
+        margin-left: 76px;
+    }
+
+    .title-adress-list {
+        display: flex;
+        gap: 40px; 
+        margin-left: 332px;
     }
 }
 
