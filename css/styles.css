@@ -758,7 +758,7 @@ screen and (min-resolution: 2dppx) {
 .header_container {
     display: flex;
     align-items: center;
-    height: 72px;
+    height: 70px;
 }
 
 .title-list {
@@ -811,6 +811,19 @@ screen and (min-resolution: 2dppx) {
     gap: 40px;
 }
 
+@media screen and (min-width: 768px) {
+    .title-adress {
+        display: contents; 
+    }
+
+    .title-link {
+        display: contents;
+    }
+
+    .header_container {
+        height: 72px;
+    }
+}
 
 /*------------------------------main-------------------------------*/
 /*------------------------------section-------------------------------*/
@@ -1187,13 +1200,14 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
 /*_____________________ mobile menu______________________ */
 
 .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
+    min-height: 19px;
+    min-width: 29px;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    margin: 0;
+    /* margin: 0; */
+    /* margin-left: 178px; */
     padding: 0;
     background-color: transparent;
     cursor: pointer;
