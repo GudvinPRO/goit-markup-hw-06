@@ -112,19 +112,19 @@ body {
     outline-offset: -2px;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .container {
         max-width: 768px; 
     }
-}
+} */
 
-@media screen and (min-width: 1158px) {
+/* @media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
         margin: 0 auto;
         padding: 0 15px 0 15px; 
     }
-}
+} */
 
 .main-board {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
@@ -598,11 +598,15 @@ screen and (min-resolution: 2dppx) {
 
 .footer_title_container {
     display: flex;
-    align-items: baseline; 
+    flex-direction: column;
+    text-align: center;
+    /* align-items: baseline;  */
 }
 
 .container-footer {
-    margin-right: 120px;
+    /* margin-right: 120px; */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-logotype {
@@ -611,11 +615,12 @@ screen and (min-resolution: 2dppx) {
     font-size: 18px;
     font-style: normal;
     font-weight: 800;
-    line-height: 1.17; /* 116.667% */
+    line-height: 1.17; 
     letter-spacing: 0.03em;
     text-transform: uppercase;
     display: inline-block;
-    margin-bottom: 16px;
+    margin-bottom: 17.5px;
+    /* margin-bottom: 16px; */
 }
 
 .footer-logo-part {
@@ -624,18 +629,24 @@ screen and (min-resolution: 2dppx) {
 
 .footer-down-desidn {
     background: var(--navyblue);
-    padding: 100px 0 
+    padding: 97px 0;
+    /* padding: 100px 0  */
+}
+
+.footer-social-media {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 72px;
 }
 
 .footer-down-paragraph {
     color: var(--cloud);
     width: 264px;
-    /* Body */
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.5; /* 150% */
+    line-height: 1.5; 
     letter-spacing: 0.02em;
 }
 
@@ -678,7 +689,7 @@ screen and (min-resolution: 2dppx) {
 }
 
 .form_input {
-    margin-left: 80px;
+    /* margin-left: 80px; */
 }
 
 .form_input_paragraph {
@@ -692,7 +703,9 @@ screen and (min-resolution: 2dppx) {
 
 .form_input_text {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    gap: 16px;
+    /* gap: 24px; */
 }
 
 .form_input_tab {
@@ -718,12 +731,14 @@ screen and (min-resolution: 2dppx) {
 }
 
 .form_input_button {
-    min-width: 165px;
+    /* min-width: 165px; */
+    margin-left: auto;
+    margin-right: auto;
+    width: 165px;
     height: 40px;
     display: flex;
     justify-content: center; 
     align-items: center;
-    font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
@@ -1258,9 +1273,8 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
 .mobile-menu-link {
     color: var(--navyblue);
     display: flex;
-    /* padding-bottom: 40px; */
-    font-family: Roboto;
-    font-size: 36px;
+    padding-bottom: 40px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 700;
     line-height: 1.2;
@@ -1273,7 +1287,7 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
 }
 
 .title-mobail-tel {
-    font-family: Roboto;
+    color: var(--slate);
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -1282,14 +1296,26 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
     text-transform: capitalize;
 }
 
+.title-mobail-email {   
+    color: var(--slate);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2; 
+    letter-spacing: 0.02em;
+}
+
 .mobile-menu-link:hover, .mobile-menu-link:focus,
-.title-mobail-tel:hover, .title-mobail-tel:focus {
+.title-mobail-tel:hover, .title-mobail-tel:focus,
+.title-mobail-email:hover, .title-mobail-email:focus {
     color: #404bbf;
 }
 
 .social_menu_mobail {
     display: flex;
     gap: 56px;
+    margin-top: 40px;
+    margin-left: 40px;
 }
 
 .menu-toggle {
@@ -1325,7 +1351,6 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
     left: 0;
     width: 100vw;
     height: 100vh;
-    padding: 32px;
     background-color: #ffffff;
     z-index: 999;
 
@@ -1345,6 +1370,21 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
 }
 
 .mobile-menu {
-    margin-left: 40px;
     margin-top: 80px;
+    margin-left: 40px;
+}
+
+.adress-mobail {
+    margin-top: 244px;
+}
+
+.adress-mobail {
+    padding-bottom: 48px;
+    margin-left: 40px;
+}
+
+.adress-mobail-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
