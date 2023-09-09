@@ -333,7 +333,7 @@ screen and (min-resolution: 2dppx) {
     }
 
     .section-preview {
-        padding: 120px 0;
+        /* padding: 120px 0; */
     }
 }
 
@@ -352,13 +352,6 @@ screen and (min-resolution: 2dppx) {
 
 .section-images_conteiner {
     display: none;
-}
-
-@media screen and (min-width: 1158px) {
-    .section-images_conteiner {
-        display: contents;
-        padding-bottom: 120px;
-    }
 }
 
 .conteiner_imeges_title {
@@ -386,6 +379,17 @@ screen and (min-resolution: 2dppx) {
     width: calc((100% - 48px) / 3);
 }
 
+@media screen and (min-width: 1158px) {
+    .section-images_conteiner {
+        display: contents;
+    }
+
+    .conteiner_imeges_title {
+        margin-bottom: 120px;
+    }
+}
+
+
 /*------------------------------section 4-------------------------------*/
 
 .fourth-section{
@@ -394,6 +398,7 @@ screen and (min-resolution: 2dppx) {
 .staff {
     max-width: 296px;
     min-width: auto;
+    padding-bottom: 96px;
 }
 
 .section-imeges-title-personnel {
@@ -427,39 +432,6 @@ screen and (min-resolution: 2dppx) {
 
 .fourth-section {
     background-color: #F4F4FD;
-}
-
-@media screen and (min-width: 768px) {
-    .staff {
-        max-width: 584px;
-    }
-
-    .fourth-container {
-        gap: 64px 24px;
-    }
-
-    .fourth-section-list {
-        width: calc((100% - 24px) / 2);
-    }
-}
-
-@media screen and (min-width: 1158px) {
-    .staff {
-        max-width: 1158px;
-    }
-
-    .fourth-container {
-        gap: 24px;
-    }
-
-    .fourth-section-list {
-        max-width: 264px;
-        width: calc((100% - 72px) / 4);
-    }
-
-    .section-imeges-title-personnel {
-        padding-top: 120px;
-    }
 }
 
 .inside-personnel { 
@@ -522,6 +494,43 @@ screen and (min-resolution: 2dppx) {
 
 .icons {
     fill: var(--cloud)
+}
+
+@media screen and (min-width: 768px) {
+    .staff {
+        max-width: 584px;
+    }
+
+    .fourth-container {
+        gap: 64px 24px;
+    }
+
+    .fourth-section-list {
+        width: calc((100% - 24px) / 2);
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .staff {
+        max-width: 1158px;
+    }
+
+    .fourth-container {
+        gap: 24px;
+    }
+
+    .fourth-section-list {
+        max-width: 264px;
+        width: calc((100% - 72px) / 4);
+    }
+
+    .section-imeges-title-personnel {
+        padding-top: 120px;
+    }
+
+    .staff {
+        padding-bottom: 100px;
+    }
 }
 
 /*------------------------------section 5-------------------------------*/
@@ -601,7 +610,6 @@ screen and (min-resolution: 2dppx) {
 }
 
 .container-footer {
-    /* margin-right: 120px; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -617,7 +625,6 @@ screen and (min-resolution: 2dppx) {
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 17.5px;
-    /* margin-bottom: 16px; */
 }
 
 .footer-logo-part {
@@ -627,10 +634,9 @@ screen and (min-resolution: 2dppx) {
 .footer-down-desidn {
     background: var(--navyblue);
     padding: 97px 0;
-    /* padding: 100px 0  */
 }
 
-.footer-social-media {
+.footer-social {
     margin-left: auto;
     margin-right: auto;
     margin-top: 72px;
@@ -686,7 +692,7 @@ screen and (min-resolution: 2dppx) {
 }
 
 .form_input {
-    /* margin-left: 80px; */
+    margin-top: 72px;
 }
 
 .form_input_paragraph {
@@ -708,7 +714,7 @@ screen and (min-resolution: 2dppx) {
 }
 
 .email_text {
-    width: 264px; 
+    width: 398px; 
     height: 40px;
     border: 1px solid #ffffff;
     background-color: transparent;
@@ -751,6 +757,10 @@ screen and (min-resolution: 2dppx) {
 }
 
 @media screen and (min-width: 768px) {  
+    .email_text {
+        width: 264px;
+    }
+
     .footer_title_container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -763,7 +773,7 @@ screen and (min-resolution: 2dppx) {
         margin-right: 0%;
     }
 
-    .footer-social-media {
+    .footer-social {
         margin: 0 0 0 24px;
     }
 
@@ -778,6 +788,25 @@ screen and (min-resolution: 2dppx) {
 
     .form_input {
         margin: 72px 0 0 92px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .footer-down-desidn {
+        padding: 100px 0; 
+    }
+
+    .container-footer {
+        margin-left: 0;
+        margin-right: 0%;
+    }
+
+    .form_input {
+        margin: 0 0 0 80px;
+    }
+
+    .footer-social {
+        margin: 0 0 0 120px;
     }
 }
 
