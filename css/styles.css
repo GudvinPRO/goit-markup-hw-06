@@ -108,11 +108,11 @@ body {
     margin-right: auto;
     padding: 0 16px 0 16px; 
 
-    /* outline: 2px solid green;
-    outline-offset: -2px; */
+    outline: 2px solid green;
+    outline-offset: -2px;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     .container {
         max-width: 768px; 
     }
@@ -124,7 +124,7 @@ body {
         margin: 0 auto;
         padding: 0 15px 0 15px; 
     }
-}
+} */
 
 .main-board {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
@@ -1428,7 +1428,9 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
     align-items: center;
     justify-content: center;
 
-    margin-left: 249px;
+    order: 999;
+    margin-left: auto;
+
     padding: 0;
     background-color: transparent;
     cursor: pointer;
