@@ -1428,7 +1428,6 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
     align-items: center;
     justify-content: center;
 
-    order: 999;
     margin-left: auto;
 
     padding: 0;
