@@ -73,7 +73,7 @@ body {
 
 @media screen and (min-width: 768px) { 
     .title-contacts {
-        padding: 0 0 6px 121px;
+        /* padding: 0 0 6px 121px; */
         font-size: 12px;
         font-style: normal;
         line-height: 1.17; 
@@ -839,6 +839,7 @@ screen and (min-resolution: 2dppx) {
 .navigation {
     display: flex;
     align-items: center;
+    margin-right: auto;
 }
 
 .header_container {
@@ -892,6 +893,9 @@ screen and (min-resolution: 2dppx) {
 
 .title-adress-list {
     font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 @media screen and (min-width: 768px) {
@@ -903,7 +907,8 @@ screen and (min-resolution: 2dppx) {
         display: contents;
         display: flex;
         gap: 40px;
-        margin-left: 120px;
+        /* margin-left: 120px; */
+        /* justify-content: center; */
     }
 
     .header_container {
