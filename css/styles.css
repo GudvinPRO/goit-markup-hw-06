@@ -112,7 +112,7 @@ body {
     outline-offset: -2px;
 }
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .container {
         max-width: 768px; 
     }
@@ -124,7 +124,7 @@ body {
         margin: 0 auto;
         padding: 0 15px 0 15px; 
     }
-} */
+}
 
 .main-board {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
@@ -714,7 +714,10 @@ screen and (min-resolution: 2dppx) {
 }
 
 .email_text {
-    width: 398px; 
+    min-width: 290px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     height: 40px;
     border: 1px solid #ffffff;
     background-color: transparent;
@@ -1376,7 +1379,6 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
 .mobile-menu-link {
     color: var(--navyblue);
     display: flex;
-    padding-bottom: 40px;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -1385,16 +1387,16 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
     text-transform: capitalize;
 }
 
-.mobile-menu-link:not(:last-child) {
-    padding-bottom: 40px;
+.mobile-menu-list:not(:last-child) {
+    margin-bottom: 40px;
 }
 
 .title-mobail-tel {
-    color: var(--slate);
-    font-size: 36px;
+    color: var(--blue);
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.11; 
+    line-height: 1.44; 
     letter-spacing: 0.02em;
     text-transform: capitalize;
 }
@@ -1416,9 +1418,7 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
 
 .social_menu_mobail {
     display: flex;
-    gap: 56px;
-    margin-top: 40px;
-    margin-left: 40px;
+    gap: 24px;
 }
 
 .menu-toggle {
@@ -1460,6 +1460,11 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
 
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
+
+    padding: 80px 40px 40px 40px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .menu-container.is-open {
@@ -1474,17 +1479,11 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
 }
 
 .mobile-menu {
-    margin-top: 80px;
-    margin-left: 40px;
-}
-
-.adress-mobail {
-    margin-top: 244px;
+    margin-bottom: auto;
 }
 
 .adress-mobail {
     padding-bottom: 48px;
-    margin-left: 40px;
 }
 
 .adress-mobail-list {
