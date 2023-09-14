@@ -716,7 +716,6 @@ screen and (min-resolution: 2dppx) {
 }
 
 .email_text {
-    min-width: 290px;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -771,15 +770,16 @@ screen and (min-resolution: 2dppx) {
         flex-wrap: wrap;
         text-align: start;
         align-items: baseline; 
+        gap: 72px 24px;
     }
 
     .container-footer {
-        margin-left: 92px;
-        margin-right: 0%;
+        padding-left: 92px;
+        margin: 0;
     }
 
     .footer-social {
-        margin: 0 0 0 24px;
+        margin: 0;
     }
 
     .form_input_button {
@@ -792,7 +792,7 @@ screen and (min-resolution: 2dppx) {
     }
 
     .form_input {
-        margin: 72px 0 0 92px;
+        padding-left: 92px;
     }
 }
 
