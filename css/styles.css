@@ -610,6 +610,7 @@ screen and (min-resolution: 2dppx) {
     display: flex;
     flex-direction: column;
     text-align: center;
+    gap: 72px;
 }
 
 .container-footer {
@@ -627,7 +628,7 @@ screen and (min-resolution: 2dppx) {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     display: inline-block;
-    padding-bottom: 17.5px;
+    padding-bottom: 16px;
 }
 
 .footer-logo-part {
@@ -640,9 +641,7 @@ screen and (min-resolution: 2dppx) {
 }
 
 .footer-social {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 72px;
+    margin: 0 auto;
 }
 
 .footer-down-paragraph {
@@ -654,7 +653,6 @@ screen and (min-resolution: 2dppx) {
     font-weight: 400;
     line-height: 1.5; 
     letter-spacing: 0.02em;
-
     text-align: start;
 }
 
@@ -697,7 +695,6 @@ screen and (min-resolution: 2dppx) {
 }
 
 .form_input {
-    padding-top: 72px;
 }
 
 .form_input_paragraph {
