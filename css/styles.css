@@ -73,7 +73,7 @@ body {
 
 @media screen and (min-width: 768px) { 
     .title-contacts {
-        padding: 0 0 6px 121px;
+        /* padding: 0 0 6px 121px; */
         font-size: 12px;
         font-style: normal;
         line-height: 1.17; 
@@ -159,13 +159,13 @@ screen and (min-resolution: 2dppx) {
     text-align: center;
     margin-left: auto; 
     margin-right: auto;
+    padding-bottom: 72px;
 }
 
 .main-board-button {
     background: var(--iris);
     color: var(--white);
     margin: 0 auto;
-    margin-top: 72px;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -270,7 +270,7 @@ screen and (min-resolution: 2dppx) {
     display: flex;
     flex-wrap: wrap;
     gap: 72px;
-    margin: 96px 0;
+    padding: 96px 0;
 }
 
 .container_menu_list {
@@ -289,7 +289,7 @@ screen and (min-resolution: 2dppx) {
     font-weight: 700;
     line-height: 1.2; 
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
+    padding-bottom: 8px;
     text-align: center;
 }
 
@@ -447,7 +447,7 @@ screen and (min-resolution: 2dppx) {
     line-height: 1.2; 
     letter-spacing: 0.02em;
     text-align: center;
-    margin-bottom: 8px;
+    padding-bottom: 8px;
 }
 
 .section-paragraph-personnel-text {
@@ -465,7 +465,7 @@ screen and (min-resolution: 2dppx) {
     display: flex; 
     justify-content: center; 
     gap: 24px;
-    margin-top: 8px;
+    padding-top: 8px;
 }
 
 .icons_list {
@@ -536,8 +536,8 @@ screen and (min-resolution: 2dppx) {
 /*------------------------------section 5-------------------------------*/
 
 .section_customers {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .title_customers {
@@ -545,7 +545,7 @@ screen and (min-resolution: 2dppx) {
     line-height: 1.11;
     text-align: center;
     color: var(--navyblue);
-    margin-bottom: 72px;
+    padding-bottom: 72px;
 }
 
 .menu_customers {
@@ -662,7 +662,7 @@ screen and (min-resolution: 2dppx) {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--white);
-    margin-bottom: 16px;
+    padding-bottom: 16px;
 }
 
 .social_menu {
@@ -695,11 +695,11 @@ screen and (min-resolution: 2dppx) {
 }
 
 .form_input {
-    margin-top: 72px;
+    padding-top: 72px;
 }
 
 .form_input_paragraph {
-    margin-bottom: 16px; 
+    padding-bottom: 16px; 
     font-weight: 500;
     font-size: 16px; 
     line-height: 1.5;
@@ -842,6 +842,7 @@ screen and (min-resolution: 2dppx) {
 .navigation {
     display: flex;
     align-items: center;
+    margin-right: auto;
 }
 
 .header_container {
@@ -895,6 +896,9 @@ screen and (min-resolution: 2dppx) {
 
 .title-adress-list {
     font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 @media screen and (min-width: 768px) {
@@ -906,7 +910,8 @@ screen and (min-resolution: 2dppx) {
         display: contents;
         display: flex;
         gap: 40px;
-        margin-left: 120px;
+        /* margin-left: 120px; */
+        /* justify-content: center; */
     }
 
     .header_container {
@@ -1399,7 +1404,7 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 1.44; 
+    line-height: 1.11; 
     letter-spacing: 0.02em;
     text-transform: capitalize;
 }
@@ -1421,7 +1426,7 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
 
 .social_menu_mobail {
     display: flex;
-    gap: 24px;
+    gap: 26px;
 }
 
 .menu-toggle {
@@ -1464,10 +1469,10 @@ input[type="checkbox"]:checked + label .user-privacy-policy {
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
 
-    padding: 80px 40px 40px 40px;
-
     display: flex;
     flex-direction: column;
+
+    padding: 80px 40px 40px 40px;
 }
 
 .menu-container.is-open {
