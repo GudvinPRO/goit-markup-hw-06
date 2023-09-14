@@ -627,7 +627,7 @@ screen and (min-resolution: 2dppx) {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     display: inline-block;
-    margin-bottom: 17.5px;
+    padding-bottom: 17.5px;
 }
 
 .footer-logo-part {
@@ -642,7 +642,7 @@ screen and (min-resolution: 2dppx) {
 .footer-social {
     margin-left: auto;
     margin-right: auto;
-    /* margin-top: 72px; */
+    margin-top: 72px;
 }
 
 .footer-down-paragraph {
@@ -655,8 +655,7 @@ screen and (min-resolution: 2dppx) {
     line-height: 1.5; 
     letter-spacing: 0.02em;
 
-    margin-left: auto;
-    margin-right: auto;
+    text-align: start;
 }
 
 .footer-social-paragraph {
