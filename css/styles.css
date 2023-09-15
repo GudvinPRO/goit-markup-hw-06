@@ -333,7 +333,7 @@ screen and (min-resolution: 2dppx) {
     }
 
     .section-preview {
-        /* padding: 120px 0; */
+        padding: 120px 0;
     }
 }
 
@@ -385,7 +385,7 @@ screen and (min-resolution: 2dppx) {
     }
 
     .conteiner_imeges_title {
-        margin-bottom: 120px;
+        padding-bottom: 120px;
     }
 }
 
@@ -525,12 +525,9 @@ screen and (min-resolution: 2dppx) {
         width: calc((100% - 72px) / 4);
     }
 
-    .section-imeges-title-personnel {
-        padding-top: 120px;
-    }
-
-    .staff {
-        padding-bottom: 100px;
+    .fourth-section{
+        padding-bottom: 120px;
+        padding-top: 120px; 
     }
 }
 
@@ -575,10 +572,16 @@ screen and (min-resolution: 2dppx) {
 @media screen and (min-width: 1158px) {
     .menu_customers {
         gap: 24px; 
+        max-width: 100%;
     }
 
     .list_customers{
         width: calc((100% - 120px) / 6);
+    }
+
+    .section_customers {
+        padding-top: 120px;
+        padding-bottom: 120px;
     }
 }
 
@@ -802,16 +805,21 @@ screen and (min-resolution: 2dppx) {
     }
 
     .container-footer {
-        margin-left: 0;
-        margin-right: 0%;
+        /* margin-left: 0;
+        margin-right: 0%; */
     }
 
     .form_input {
-        margin: 0 0 0 80px;
+        padding: 0;
     }
 
     .footer-social {
-        margin: 0 0 0 120px;
+        /* margin: 0 0 0 120px; */
+    }
+
+    .footer_title_container {
+        flex-wrap: nowrap;
+        /* gap: 72px 24px; */
     }
 }
 
@@ -926,14 +934,13 @@ screen and (min-resolution: 2dppx) {
         margin-left: auto;
     }
 
-    .title-link {
-        margin-left: 76px;
+    .title-adress-list {
+        flex-direction: row;
+        gap: 40px;
     }
 
-    .title-adress-list {
-        display: flex;
-        gap: 40px; 
-        margin-left: 332px;
+    .logo-web {
+        margin-right: 76px;
     }
 }
 
