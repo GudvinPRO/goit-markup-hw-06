@@ -983,7 +983,7 @@ screen and (min-resolution: 2dppx) {
     list-style: none;
     display: flex;
     gap: 24px;
-    margin-bottom: 48px;
+    padding-bottom: 48px;
     flex-wrap: wrap;
 } 
 
@@ -1082,7 +1082,7 @@ screen and (min-resolution: 2dppx) {
     font-weight: 500;
     line-height: 1.2; 
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
+    padding-bottom: 8px;
 }
 
 .title-images-menu-paragraph {
@@ -1130,7 +1130,7 @@ screen and (min-resolution: 2dppx) {
 
     .title-button-list {
         justify-content: center;
-        margin-bottom: 64px;
+        padding-bottom: 64px;
     } 
 
     .title-button {
@@ -1149,7 +1149,7 @@ screen and (min-resolution: 2dppx) {
     }
 
     .title-button-list {
-        margin-bottom: 72px;
+        padding-bottom: 72px;
     } 
     
     .title-button {
