@@ -387,6 +387,7 @@ screen and (min-resolution: 2dppx) {
     .conteiner_imeges_title {
         padding-bottom: 120px;
     }
+
 }
 
 
@@ -805,8 +806,8 @@ screen and (min-resolution: 2dppx) {
     }
 
     .container-footer {
-        /* margin-left: 0;
-        margin-right: 0%; */
+        padding-left: 0;
+        padding-right: 120px;
     }
 
     .form_input {
@@ -815,11 +816,12 @@ screen and (min-resolution: 2dppx) {
 
     .footer-social {
         /* margin: 0 0 0 120px; */
+        margin-right: auto;
     }
 
     .footer_title_container {
         flex-wrap: nowrap;
-        /* gap: 72px 24px; */
+        gap: 0;
     }
 }
 
