@@ -770,6 +770,7 @@ screen and (min-resolution: 2dppx) {
     }
 
     .footer_title_container {
+        max-width: 584px;
         flex-direction: row;
         flex-wrap: wrap;
         text-align: start;
@@ -778,7 +779,6 @@ screen and (min-resolution: 2dppx) {
     }
 
     .container-footer {
-        padding-left: 92px;
         margin: 0;
     }
 
@@ -795,9 +795,6 @@ screen and (min-resolution: 2dppx) {
         gap: 24px;
     }
 
-    .form_input {
-        padding-left: 92px;
-    }
 }
 
 @media screen and (min-width: 1158px) {
@@ -815,14 +812,15 @@ screen and (min-resolution: 2dppx) {
     }
 
     .footer-social {
-        /* margin: 0 0 0 120px; */
         margin-right: auto;
     }
 
     .footer_title_container {
         flex-wrap: nowrap;
         gap: 0;
+        max-width: 1158px;
     }
+
 }
 
 /*------------------------------portfolio-------------------------------*/
