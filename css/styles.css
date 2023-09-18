@@ -73,7 +73,6 @@ body {
 
 @media screen and (min-width: 768px) { 
     .title-contacts {
-        /* padding: 0 0 6px 121px; */
         font-size: 12px;
         font-style: normal;
         line-height: 1.17; 
@@ -108,8 +107,8 @@ body {
     margin-right: auto;
     padding: 0 16px 0 16px; 
 
-    outline: 2px solid green;
-    outline-offset: -2px;
+    /* outline: 2px solid green;
+    outline-offset: -2px; */
 }
 
 @media screen and (min-width: 768px) {
@@ -192,11 +191,13 @@ screen and (min-resolution: 2dppx) {
         font-size: 56px; 
         line-height: 1.07;
         max-width: 496px;
+        padding-bottom: 0;
     }
 
     .main-board-button {
         margin-top: 36px;
     }
+    
 }
 
 @media screen and (min-device-pixel-ratio: 2), 
@@ -405,8 +406,7 @@ screen and (min-resolution: 2dppx) {
 
 .section-imeges-title-personnel {
     color: var(--navyblue);
-    /* padding-top: 96px; */
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     font-family: "Roboto", sans-serif;
     font-size: 36px;
     font-style: normal;
@@ -544,7 +544,7 @@ screen and (min-resolution: 2dppx) {
     line-height: 1.11;
     text-align: center;
     color: var(--navyblue);
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .menu_customers {
@@ -1174,7 +1174,7 @@ screen and (min-resolution: 2dppx) {
     top: 50%; 
     left: 50%;
     transform: translate(-50%, -50%) scale(1); 
-    width: 408px;
+    width: calc(100% - 30px);
     min-height: 584px;
     background: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -1183,6 +1183,13 @@ screen and (min-resolution: 2dppx) {
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     padding: 72px 24px 24px 24px;
+}
+
+@media screen and (min-width: 428px) {
+
+    .modal {
+        width: 408px; 
+    } 
 }
 
 .backdrop_paragraph {
