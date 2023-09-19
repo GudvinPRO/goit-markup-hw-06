@@ -346,10 +346,11 @@ screen and (min-resolution: 2dppx) {
 /*------------------------------section 3-------------------------------*/
 
 .section-images_conteiner {
-    display: none;
+    /* display: none; */
 }
 
 .conteiner_imeges_title {
+    display: none;
 }
 
 .section-imeges-title {
@@ -376,11 +377,13 @@ screen and (min-resolution: 2dppx) {
 
 @media screen and (min-width: 1158px) {
     .section-images_conteiner {
-        display: contents;
+        padding-bottom: 120px;
     }
 
     .conteiner_imeges_title {
-        padding-bottom: 120px;
+        display: contents;
+        display: flex;
+        flex-direction: column;
     }
 
 }
@@ -455,6 +458,7 @@ screen and (min-resolution: 2dppx) {
     line-height: 1.5; 
     letter-spacing: 0.02em;
     text-align: center; 
+    margin-bottom: 8px;
 }
 
 .fourth-icons_menu {
