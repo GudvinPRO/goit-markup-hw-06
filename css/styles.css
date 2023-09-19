@@ -979,7 +979,7 @@ screen and (min-resolution: 2dppx) {
     list-style: none;
     display: flex;
     gap: 24px;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
     flex-wrap: wrap;
 } 
 
@@ -1078,7 +1078,7 @@ screen and (min-resolution: 2dppx) {
     font-weight: 500;
     line-height: 1.2; 
     letter-spacing: 0.02em;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .title-images-menu-paragraph {
@@ -1126,7 +1126,7 @@ screen and (min-resolution: 2dppx) {
 
     .title-button-list {
         justify-content: center;
-        padding-bottom: 64px;
+        margin-bottom: 64px;
     } 
 
     .title-button {
@@ -1134,9 +1134,6 @@ screen and (min-resolution: 2dppx) {
         padding-bottom: 96px;
     }
 
-    .title-button-list {
-        justify-content: center;
-    } 
 }
 
 @media screen and (min-width: 1158px) {
@@ -1145,7 +1142,7 @@ screen and (min-resolution: 2dppx) {
     }
 
     .title-button-list {
-        padding-bottom: 72px;
+        margin-bottom: 72px;
     } 
     
     .title-button {
